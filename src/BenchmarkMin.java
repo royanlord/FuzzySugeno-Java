@@ -57,7 +57,7 @@ public class BenchmarkMin {
         System.out.println("  Memory = " + memUsed2 + " bytes");
     }
 
-    // Cara 1: menggunakan List + Collections.min()
+    // Test 1: List + Collections.min()
     private double Find_Min_Collection(double a, double b, double c) {
         List<Double> list = new ArrayList<>(3);
         list.add(a);
@@ -66,7 +66,7 @@ public class BenchmarkMin {
         return Collections.min(list);
     }
 
-    // Cara 2: menggunakan Math.min()
+    // Test 2: Math.min()
     private double Find_Min_Math(double a, double b, double c) {
         return Math.min(a, Math.min(b, c));
     }
